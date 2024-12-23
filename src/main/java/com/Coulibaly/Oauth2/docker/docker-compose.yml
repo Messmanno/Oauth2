@@ -1,0 +1,10 @@
+services:
+  postgres:
+    image: postgres:15.3
+    container_name: oauth0
+    environment:
+      POSTGRES_USER: oauth0
+      POSTGRES_PASSWORD: oauth0
+      POSTGRES_DB: oauth
+    ports:
+      - 5432:5432
